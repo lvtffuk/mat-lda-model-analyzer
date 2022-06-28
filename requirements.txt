@@ -1,0 +1,3 @@
+pyLDAvis
+gensim
+IPython
