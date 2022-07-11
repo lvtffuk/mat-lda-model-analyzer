@@ -1,5 +1,5 @@
 # mat-lda-model-analyzer
-Visualizations for LDA models from (mat-analyzer)[https://github.com/zabkwak/mat-analyzer].
+Visualizations for LDA models from (mat-analyzer)[https://github.com/lvtffuk/mat-analyzer].
 
 ## Development
 ### Requirements
@@ -7,7 +7,7 @@ Visualizations for LDA models from (mat-analyzer)[https://github.com/zabkwak/mat
 - `gcc` and `g++` libraries
 ### Installation & test run
 ```bash
-git clone git@github.com:zabkwak/mat-lda-model-analyzer.git
+git clone git@github.com:lvtffuk/mat-lda-model-analyzer.git
 cd mat-lda-model-analyzer
 pip install -r requirements.txt
 python ./
@@ -28,9 +28,9 @@ The input directory should contain 4 files with the `LDA` model and the corpus f
 - `lda.model.state`
 
 ## Docker
-The [image](https://github.com/zabkwak/mat-lda-model-analyzer/pkgs/container/mat-lda-model-analyzer) is stored in GitHub packages registry and the app can be run in the docker environment.
+The [image](https://github.com/lvtffuk/mat-lda-model-analyzer/pkgs/container/mat-lda-model-analyzer) is stored in GitHub packages registry and the app can be run in the docker environment.
 ```bash
-docker pull ghcr.io/zabkwak/mat-lda-model-analyzer:latest
+docker pull ghcr.io/lvtffuk/mat-lda-model-analyzer:latest
 ```
 
 ```bash
@@ -40,7 +40,7 @@ docker run \
 --restart=unless-stopped \
 --name=mat-lda-model-analyzer \
 -v '/absolute/path/to/input/dir:/usr/src/app/input' \
-ghcr.io/zabkwak/mat-lda-model-analyzer:latest  
+ghcr.io/lvtffuk/mat-lda-model-analyzer:latest  
 ```
 The app will be accessible on `http://localhost:8080`.
 
